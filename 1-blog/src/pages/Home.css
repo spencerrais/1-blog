@@ -48,3 +48,13 @@ i {
   color: var(--main-red);
   font-style: italic;
 }
+
+.info-section i {
+  display: block;
+  padding-top: 3rem;
+}
+
+.info-section i:hover {
+  color: var(--main-blue);
+  cursor: pointer;
+}
