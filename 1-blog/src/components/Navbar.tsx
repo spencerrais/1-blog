@@ -2,7 +2,6 @@ import React from 'react'
 import {Button, Menu, Typography, Avatar} from 'antd';
 import { Link } from 'react-router-dom';
 import {HomeOutlined, FolderOutlined, LineChartOutlined } from '@ant-design/icons';
-import profile from '../images/Profile.png';
 
 const Navbar = () => {
     return (
