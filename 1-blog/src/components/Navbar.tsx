@@ -1,17 +1,17 @@
 import React from 'react'
-import {Button, Menu, Layout, Avatar} from 'antd';
+import {Button, Menu, Layout} from 'antd';
 import { Link } from 'react-router-dom';
 import {HomeOutlined, FolderOutlined, LineChartOutlined } from '@ant-design/icons';
 
 const Navbar = () => {
     return (
         <div className="nav-container">
-            <Layout.Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
-            <div className="logo-container">
-            <Link to="/"><Avatar style={{backgroundColor: '#fde3cf'}}>SR</Avatar>Spencer Raisanen</Link>
+            <div className="nav-name-container">
+                <Link to="/">Spencer Raisanen</Link>
                 {/*<Button className="menu-control-container">
                 </Button>*/}
             </div>
+            <div className="nav-links-container"></div>
             <Menu theme="dark" mode="horizontal">
                 <Menu.Item icon={<HomeOutlined />}>
                     <Link to="/"> Home</Link>
@@ -23,7 +23,6 @@ const Navbar = () => {
                     <Link to="/cryptos">Charts</Link>
                 </Menu.Item>
             </Menu>
-            </Layout.Header>
         </div>
     )
 }
