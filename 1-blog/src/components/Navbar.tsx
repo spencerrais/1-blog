@@ -7,10 +7,7 @@ const Navbar = () => {
     return (
         <div className="nav-container">
             <div className="logo-container">
-                <Avatar style={{backgroundColor: '#fde3cf'}}>SR</Avatar>
-                <Typography.Title level={2} className="logo">
-                    <Link to="/">Home</Link>
-                </Typography.Title>
+            <Link to="/"><Avatar style={{backgroundColor: '#fde3cf'}}>SR</Avatar></Link>
                 {/*<Button className="menu-control-container">
                 </Button>*/}
             </div>

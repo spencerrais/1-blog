@@ -49,9 +49,10 @@ a:hover {
   padding: 20px;
   align-items: center;
   width: 100%;
+  margin: 0 0 0 0;
 }
 .logo {
-  margin: 0 0 0 15px;
+  margin: 0 0 0 0;
 }
 .logo a {
   color: white;
