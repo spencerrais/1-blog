@@ -13,17 +13,36 @@
   box-sizing: border-box;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  width: 100%;
+}
+
+/*
 a:hover {
-  color: var(--pink) !important;
+  color: var(--text-primary) !important;
 }
 
 .app {
   display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
 .navbar {
-  flex: 0.2;
+  display: flex;
+
   background-color: rgb(0, 21, 41);
 }
 
@@ -35,10 +54,10 @@ a:hover {
   padding: 20px;
 }
 .nav-container {
+  display: flex;
   position: fixed;
   left: 0;
-  margin: 10px;
-  height: 100vh;
+  height: 10vh;
   margin: 0px;
   background-color: rgb(0, 21, 41);
 }
@@ -165,3 +184,4 @@ a:hover {
   align-items: center;
   text-align: center;
 }
+*/
