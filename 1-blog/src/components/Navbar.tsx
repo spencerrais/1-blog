@@ -1,29 +1,24 @@
 import React from 'react'
 import {Button, Menu, Layout} from 'antd';
 import { Link } from 'react-router-dom';
-import {HomeOutlined, FolderOutlined, LineChartOutlined } from '@ant-design/icons';
+import {HomeOutlined, FolderOutlined, LineChartOutlined, MenuOutlined } from '@ant-design/icons';
 
 const Navbar = () => {
     return (
-        <div className="nav-container">
-            <div className="nav-name-container">
-                <Link to="/">Spencer Raisanen</Link>
-                {/*<Button className="menu-control-container">
-                </Button>*/}
-            </div>
-            <div className="nav-links-container"></div>
-            <Menu theme="dark" mode="horizontal">
-                <Menu.Item icon={<HomeOutlined />}>
-                    <Link to="/"> Home</Link>
-                </Menu.Item>
-                <Menu.Item icon={<FolderOutlined />}>
-                    <Link to="/work">Work</Link>
-                </Menu.Item>
-                <Menu.Item icon={<LineChartOutlined />}>
-                    <Link to="/cryptos">Charts</Link>
-                </Menu.Item>
-            </Menu>
-        </div>
+        <header>
+            <nav className="nav-container">
+                <input type="checkbox" id="check" />
+                <label htmlFor="check" className="menu-btn">
+                    <MenuOutlined />
+                </label>
+                <Link to="/" className="logo">Spencer Raisanen</Link>
+                <ul className="nav-links">
+                    <li><Link to="/work" className="nav-link-item">Work</Link></li>
+                    <li><Link to="/about" className="nav-link-item">About</Link></li>
+                    <li className="contact"><Link to="/contact" className="contact">Contact</Link></li>
+                </ul>
+            </nav>
+        </header>
     )
 }
 
