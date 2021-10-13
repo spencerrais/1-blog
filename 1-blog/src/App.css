@@ -92,6 +92,34 @@ li .contact:hover {
   display: none;
   cursor: pointer;
 }
+
+.routes {
+  display: flex;
+  flex-direction: column;
+}
+
+.routes .top {
+  margin: 20px 0;
+}
+.routes h1 {
+  color: rgb(216, 97, 97);
+  text-align: center;
+  font-size: 28px;
+}
+
+.routes h2 {
+  color: white;
+  text-align: center;
+}
+
+.routes li {
+  color: white;
+  text-align: center;
+}
+
+.routes ul {
+  list-style: numbered;
+}
 @media (max-width: 800px) {
   .nav-links {
     position: fixed;
